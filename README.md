@@ -19,7 +19,7 @@ Includes training bias model and ChromBPNet model
 - [`fold_3.sh`](/folds/fold_3.sh)
 - [`fold_4.sh`](/folds/fold_4.sh)
 
-Note: will need to make separate directories for each fold and include the associated .json file
+Note: will need to make separate directories for each fold and include the associated .json file (folder with splits [here](splits/)
 
 ## Score variants of interest with [variant scorer](https://github.com/kundajelab/variant-scorer/tree/main)
 
@@ -58,8 +58,8 @@ Running with 1,000,000 seqlets and 500bp window
 Before running report script, get motifs of interest. Example:
 ```
 wget \
- 	https://jaspar.genereg.net/download/data/2022/CORE/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt \
-	 -O /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt
+	https://jaspar.genereg.net/download/data/2022/CORE/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt \
+	-O /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt
 ```
 
 Profile:
