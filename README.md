@@ -8,7 +8,7 @@ Data used -- ATAC-seq from four gastrocnemius medialis tissue samples:
 - [ENCSR689SDA](https://www.encodeproject.org/experiments/ENCSR689SDA/)
 
 ## Preprocessing  
-Used filtered .bam alignments and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
+Used filtered .bam alignments to train model and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
 - [`preprocessing.sh`](preprocessing.sh)
 
 Note: the working directory for the preprocessing script is different from the rest of the scripts (data from preprocessing was copied into new directory in /data)
