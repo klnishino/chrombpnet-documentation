@@ -20,8 +20,15 @@ Includes training bias model and ChromBPNet model
 **`fold_3.sh`**
 **`fold_4.sh`**
 
-## Get contribution scores
+## Score variants of interest
+According to [variant scorer](https://github.com/kundajelab/variant-scorer/tree/main)
+Run commands in this script after navigating into copied github repository with python scripts:
+**`variant_scoring_all_folds.sh`**
+Using variants in this file in original format: **`active_rsid.bed`**
+
+## Get contribution scores (~28 hours to run)
 Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https://github.com/kundajelab/chrombpnet/wiki/FAQ)
+
 `bedtools makewindows -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -w 1000 -s 750 > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed`
 
 **`fold_0_contribs.sh`**
@@ -29,5 +36,9 @@ Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https:/
 **`fold_2_contribs.sh`**
 **`fold_3_contribs.sh`**
 **`fold_4_contribs.sh`**
+
+## Merge contribution scores across folds (for both profile and counts scores)
+Profile: **`mean_profile_h5.py`**
+Counts: **`mean_counts_h5.py`**
 
 
