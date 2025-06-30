@@ -76,7 +76,7 @@ Counts:
 - To get .h5 file: [`modisco_counts.sh`](/modisco/modisco_counts.sh)
 - Report: [`modisco_counts_report.sh`](/modisco/modisco_counts_report.sh)
 
-## Run [FiNeMo](https://github.com/austintwang/finemo_gpu)
+## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)
 - Preprocessing (profile and counts in same file): [`finemo_preprocessing.sh`](/finemo/finemo_preprocessing.sh)
 - Hit calling
   - Profile: [`finemo_profile.sh`](/finemo/finemo_profile.sh)
