@@ -15,7 +15,7 @@ Note: the working directory for the preprocessing script is different from the r
 - preprocessing working directory: `/scratch/tovar_root/tovar0/knishino/20250616_chrombpnet-sm`
 - downstream working directory: `/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm`
 
-## 5-fold cross-validation (~48 hours to run)
+## 5-fold cross-validation (~48 hours to run; 24 for bias model, 24 for ChromBPNet model)
 Includes training bias model and ChromBPNet model  
 - [`fold_0.sh`](/folds/fold_0.sh)
 - [`fold_1.sh`](/folds/fold_1.sh)
