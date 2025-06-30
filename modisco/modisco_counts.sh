@@ -16,5 +16,6 @@ conda activate chrombpnet
 modisco motifs -i /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_counts_folds/mean_contribs_bw.counts_scores.h5 \
 -n 1000000 \
 -o /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_counts_folds/modisco/modisco_results.h5 \
+-w 500 \
 -v
 
