@@ -37,7 +37,8 @@ Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https:/
 [**`fold_3_contribs.sh`**](/folds/fold_3_contribs.sh)
 [**`fold_4_contribs.sh`**](/folds/fold_4_contribs.sh)
 
-## Merge contribution scores across folds (for both profile and counts scores)
+## Merge contribution scores across folds
+Code is the same for both profile and counts scores except for paths to appropriate .h5 file
 Profile: [**`mean_profile_h5.py`**](contribution_scores/mean_profile_h5.py)
 Counts: [**`mean_counts_h5.py`**](contribution_scores/mean_counts_h5.py)
 
