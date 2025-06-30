@@ -40,6 +40,7 @@ python variant_scoring.py \
 -s /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/hg38.chrom.sizes \
 -sc original
 
+# put all tsv scoring files into one folder (here: "all_variant_scores")
 python variant_summary_across_folds.py \
 -sd /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores \
 -sl /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores/fold_0_snp_score.variant_scores.tsv /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores/fold_1_snp_score.variant_scores.tsv /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores/fold_2_snp_score.variant_scores.tsv /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores/fold_3_snp_score.variant_scores.tsv /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores/fold_4_snp_score.variant_scores.tsv \
