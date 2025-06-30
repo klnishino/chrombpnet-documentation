@@ -11,6 +11,10 @@ Data used -- ATAC-seq from four gastrocnemius medialis tissue samples:
 Used filtered .bam alignments and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
 - [`preprocessing.sh`](preprocessing.sh)
 
+Note: the working directory for the preprocessing script is different from the rest of the scripts (data from preprocessing was copied into new directory in /data)
+- preprocessing working directory: `/scratch/tovar_root/tovar0/knishino/20250616_chrombpnet-sm`
+- downstream working directory: `/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm`
+
 ## 5-fold cross-validation (~48 hours to run)
 Includes training bias model and ChromBPNet model  
 - [`fold_0.sh`](/folds/fold_0.sh)
