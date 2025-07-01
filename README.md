@@ -49,6 +49,7 @@ bedtools makewindows -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm
 - [`fold_4_contribs.sh`](/folds/fold_4_contribs.sh)
 
 ## Merge contribution scores across folds
+Python code adapted from [Marderstein^, Kundu^, et al. Mapping the regulatory effects of common and rare non-coding variants across cellular and developmental contexts in the brain and heart.](https://pubmed.ncbi.nlm.nih.gov/40027628/)
 Create two directories for profile and counts scores:  
   - (ex. `mkdir /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_profile_folds`)
   - (ex. `mkdir /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_counts_folds`)
