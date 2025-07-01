@@ -1,7 +1,7 @@
 # chrombpnet-documentation
 ## General workflow
 1. [Preprocessing](#preprocessing)
-2. [Train bias model and ChromBPNet model](5-fold-cross-validation-48-hours-to-run-24-for-bias-model-24-for-chrombpnet-model)
+2. [Train bias model and ChromBPNet model](#5-fold-cross-validation-48-hours-to-run-24-for-bias-model-24-for-chrombpnet-model)
 3. [Get contribution scores and merge across folds](#get-contribution-scores-28-hours-to-run)
 4. [TF-MoDISco](#run-tf-modisco-lite-96-hours-and-still-running)
 5. [Fi-NeMo](#run-fi-nemo)
