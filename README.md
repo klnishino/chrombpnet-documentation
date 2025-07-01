@@ -23,7 +23,7 @@ Includes training bias model and ChromBPNet model
 - [`fold_3.sh`](/folds/fold_3.sh)
 - [`fold_4.sh`](/folds/fold_4.sh)
 
-Note: make separate directories for each fold and include the associated .json file (folder with splits [here](splits/)
+Note: make separate directories for each fold and include the associated .json file (folder with splits [here](splits/))
 
 ## Score variants of interest with [variant scorer](https://github.com/kundajelab/variant-scorer/tree/main)
 
