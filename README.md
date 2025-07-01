@@ -58,8 +58,8 @@ Create two directories for profile and counts scores:
 Profile: [`mean_profile_h5.py`](contribution_scores/mean_profile_h5.py)   
 Counts: [`mean_counts_h5.py`](contribution_scores/mean_counts_h5.py)
 
-## Run [TF-MoDISco-lite](https://github.com/jmschrei/tfmodisco-lite) (~probably forever)  
-Running with 1,000,000 seqlets and 500bp window   
+## Run [TF-MoDISco-lite](https://github.com/jmschrei/tfmodisco-lite) (~96 hours and more)  
+Running with 1,000,000 seqlets and 500 bp window   
 
 Before running report script, get motifs of interest. Example:
 ```
