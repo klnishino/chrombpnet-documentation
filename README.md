@@ -6,17 +6,17 @@
 4. [TF-MoDISco](#run-tf-modisco-lite-96-hours-and-still-running)
 5. [Fi-NeMo](#run-fi-nemo)
 
-* Variants of interest can be scored at any point after step 2
+* [Variants of interest can be scored at any point after step 2](#score-variants-of-interest-with-variant-scorer)
 
-ChromBPNet installation and environment creation done according to tutorial [here](https://github.com/kundajelab/chrombpnet/wiki/Installation)
+ChromBPNet installation, environment creation, and workflow done according to tutorial [here](https://github.com/kundajelab/chrombpnet/wiki/Installation)
 
+## Preprocessing
 Data used -- ATAC-seq from four gastrocnemius medialis tissue samples:
 - [ENCSR823ZCR](https://www.encodeproject.org/experiments/ENCSR823ZCR/)
 - [ENCSR308HPZ](https://www.encodeproject.org/experiments/ENCSR308HPZ/)
 - [ENCSR258JCL](https://www.encodeproject.org/experiments/ENCSR258JCL/)
 - [ENCSR689SDA](https://www.encodeproject.org/experiments/ENCSR689SDA/)
 
-## Preprocessing  
 Used filtered .bam alignments to train model and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
 - [`preprocessing.sh`](preprocessing.sh)
 
