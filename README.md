@@ -3,7 +3,7 @@
 1. [Preprocessing](#preprocessing)
 2. [Train bias model and ChromBPNet model](#5-fold-cross-validation-48-hours-to-run-24-for-bias-model-24-for-chrombpnet-model)
 3. [Get contribution scores and merge across folds](#get-contribution-scores-28-hours-to-run)
-4. [TF-MoDISco](#run-tf-modisco-lite-96-hours-and-still-running)
+4. [TF-MoDISco](#run-tf-modisco-lite)
 5. [Fi-NeMo](#run-fi-nemo)
 
 * [Variants of interest can be scored at any point after step 2](#score-variants-of-interest-with-variant-scorer)
@@ -21,18 +21,19 @@ Used filtered .bam alignments to train model and pseudoreplicated peaks in bed n
 - [`preprocessing.sh`](preprocessing.sh)
 
 <h6> The working directory for the preprocessing script is different from the rest of the scripts (data from preprocessing was copied into new directory in /data)
-<ul> <li> </li> preprocessing working directory: `/scratch/tovar_root/tovar0/knishino/20250616_chrombpnet-sm` </li> 
-<li> downstream working directory: `/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm` </li> </h6>
+<ul> <li> preprocessing working directory: /scratch/tovar_root/tovar0/knishino/20250616_chrombpnet-sm </li> 
+<li> downstream working directory: /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm </li> </h6>
 
 ## 5-fold cross-validation (~48 hours to run; 24 for bias model, 24 for ChromBPNet model)
 Includes training bias model and ChromBPNet model  
+
+Note: make separate directories for each fold and include the associated .json file (folder with splits [here](splits/))
+
 - [`fold_0.sh`](/folds/fold_0.sh)
 - [`fold_1.sh`](/folds/fold_1.sh)
 - [`fold_2.sh`](/folds/fold_2.sh)
 - [`fold_3.sh`](/folds/fold_3.sh)
 - [`fold_4.sh`](/folds/fold_4.sh)
-
-Note: make separate directories for each fold and include the associated .json file (folder with splits [here](splits/))
 
 ## Score variants of interest with [variant scorer](https://github.com/kundajelab/variant-scorer/tree/main)
 
@@ -88,7 +89,7 @@ Create two directories for profile and counts scores:
 Profile: [`mean_profile_h5.py`](contribution_scores/mean_profile_h5.py)   
 Counts: [`mean_counts_h5.py`](contribution_scores/mean_counts_h5.py)
 
-## Run [TF-MoDISco-lite](https://github.com/jmschrei/tfmodisco-lite) (96 hours and still running)  
+## Run [TF-MoDISco-lite](https://github.com/jmschrei/tfmodisco-lite) (??????)  
 Running with 1,000,000 seqlets and 500 bp window
 
 Before running report script, get motifs of interest. Example:
