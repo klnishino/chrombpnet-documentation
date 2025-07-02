@@ -13,9 +13,17 @@ ChromBPNet installation, environment creation, and workflow done according to tu
 ## Preprocessing
 Data used -- ATAC-seq from four gastrocnemius medialis tissue samples:
 - [ENCSR823ZCR](https://www.encodeproject.org/experiments/ENCSR823ZCR/)
+  - Filtered .bam alignments: [ENCFF125LEJ](https://www.encodeproject.org/files/ENCFF125LEJ/)
+  - Overlap peaks: [ENCFF751EAY](https://www.encodeproject.org/files/ENCFF751EAY/)
 - [ENCSR308HPZ](https://www.encodeproject.org/experiments/ENCSR308HPZ/)
+  - Filtered .bam alignments: [ENCFF256JHE](https://www.encodeproject.org/files/ENCFF256JHE/)
+  - Overlap peaks: [ENCFF849FQV](https://www.encodeproject.org/files/ENCFF849FQV/)
 - [ENCSR258JCL](https://www.encodeproject.org/experiments/ENCSR258JCL/)
+  - Filtered .bam alignments: [ENCFF532PQX](https://www.encodeproject.org/files/ENCFF532PQX/)
+  - Overlap peaks: [ENCFF080IAR](https://www.encodeproject.org/files/ENCFF080IAR/)
 - [ENCSR689SDA](https://www.encodeproject.org/experiments/ENCSR689SDA/)
+  - Filtered .bam alignments: [ENCFF531UDJ](https://www.encodeproject.org/files/ENCFF531UDJ/)
+  - Overlap peaks: [ENCFF052XAY](https://www.encodeproject.org/files/ENCFF052XAY/)
 
 Used filtered .bam alignments to train model and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
 - [`preprocessing.sh`](preprocessing.sh)
