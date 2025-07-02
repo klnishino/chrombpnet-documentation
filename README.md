@@ -51,6 +51,25 @@ Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https:/
 bedtools makewindows -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -w 1000 -s 750 > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed
 ```
 
+To get correct data type and NarrowPeak format, manipulate data in R:
+
+```
+merged_windows <- read.table("/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed")
+
+merged_windows$V4 <- "."
+merged_windows$V5 <- "."
+merged_windows$V6 <- "."
+merged_windows$V7 <- "."
+merged_windows$V8 <- "."
+merged_windows$V9 <- "."
+merged_windows$V10 <- as.integer((merged_windows$V3 - merged_windows$V2)/2)
+
+merged_windows$V2 <- as.integer(merged_windows$V2)
+merged_windows$V3 <- as.integer(merged_windows$V3)
+
+write.table(merged_windows, "/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed", quote = F, col.names = F, row.names = F, sep="\t")
+```
+
 - [`fold_0_contribs.sh`](/folds_contribs/fold_0_contribs.sh)
 - [`fold_1_contribs.sh`](/folds_contribs/fold_1_contribs.sh)
 - [`fold_2_contribs.sh`](/folds_contribs/fold_2_contribs.sh)
