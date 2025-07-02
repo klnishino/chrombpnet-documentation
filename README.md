@@ -51,11 +51,11 @@ Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https:/
 bedtools makewindows -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -w 1000 -s 750 > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed
 ```
 
-- [`fold_0_contribs.sh`](/folds/fold_0_contribs.sh)
-- [`fold_1_contribs.sh`](/folds/fold_1_contribs.sh)
-- [`fold_2_contribs.sh`](/folds/fold_2_contribs.sh)
-- [`fold_3_contribs.sh`](/folds/fold_3_contribs.sh)
-- [`fold_4_contribs.sh`](/folds/fold_4_contribs.sh)
+- [`fold_0_contribs.sh`](/folds_contribs/fold_0_contribs.sh)
+- [`fold_1_contribs.sh`](/folds_contribs/fold_1_contribs.sh)
+- [`fold_2_contribs.sh`](/folds_contribs/fold_2_contribs.sh)
+- [`fold_3_contribs.sh`](/folds_contribs/fold_3_contribs.sh)
+- [`fold_4_contribs.sh`](/folds_contribs/fold_4_contribs.sh)
 
 ## Merge contribution scores across folds
 Python code adapted from [Marderstein^, Kundu^, et al. Mapping the regulatory effects of common and rare non-coding variants across cellular and developmental contexts in the brain and heart.](https://pubmed.ncbi.nlm.nih.gov/40027628/)     
