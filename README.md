@@ -48,7 +48,7 @@ Note: make separate directories for each fold and include the associated json fi
 Run commands in this script after navigating into variant-scorer repository (ex. `cd /home/knishino/github/variant-scorer/src`)  
 - [`variant_scoring_all_folds.sh`](variant_scoring_all_folds.sh)
 - Using variants in this file in original format: [`active_rsid.bed`](active_rsid.bed)
-- To run summary command in above script, put all variant .tsv files into one directory
+- To run summary command in above script, put all variant tsv files into one directory
   - (ex. `mkdir /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/all_variant_scores`)
  
 Note: variant scores aren't necessary for running TF-MoDISco (i.e. this step is independent from the following scripts)
