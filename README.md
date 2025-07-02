@@ -13,19 +13,19 @@ ChromBPNet installation, environment creation, and workflow done according to tu
 ## Preprocessing
 Data used -- ATAC-seq from four gastrocnemius medialis tissue samples:
 - [ENCSR823ZCR](https://www.encodeproject.org/experiments/ENCSR823ZCR/)
-  - Filtered .bam alignments: [ENCFF125LEJ](https://www.encodeproject.org/files/ENCFF125LEJ/)
+  - Filtered bam alignments: [ENCFF125LEJ](https://www.encodeproject.org/files/ENCFF125LEJ/)
   - Overlap peaks: [ENCFF751EAY](https://www.encodeproject.org/files/ENCFF751EAY/)
 - [ENCSR308HPZ](https://www.encodeproject.org/experiments/ENCSR308HPZ/)
-  - Filtered .bam alignments: [ENCFF256JHE](https://www.encodeproject.org/files/ENCFF256JHE/)
+  - Filtered bam alignments: [ENCFF256JHE](https://www.encodeproject.org/files/ENCFF256JHE/)
   - Overlap peaks: [ENCFF849FQV](https://www.encodeproject.org/files/ENCFF849FQV/)
 - [ENCSR258JCL](https://www.encodeproject.org/experiments/ENCSR258JCL/)
-  - Filtered .bam alignments: [ENCFF532PQX](https://www.encodeproject.org/files/ENCFF532PQX/)
+  - Filtered bam alignments: [ENCFF532PQX](https://www.encodeproject.org/files/ENCFF532PQX/)
   - Overlap peaks: [ENCFF080IAR](https://www.encodeproject.org/files/ENCFF080IAR/)
 - [ENCSR689SDA](https://www.encodeproject.org/experiments/ENCSR689SDA/)
-  - Filtered .bam alignments: [ENCFF531UDJ](https://www.encodeproject.org/files/ENCFF531UDJ/)
+  - Filtered bam alignments: [ENCFF531UDJ](https://www.encodeproject.org/files/ENCFF531UDJ/)
   - Overlap peaks: [ENCFF052XAY](https://www.encodeproject.org/files/ENCFF052XAY/)
 
-Used filtered .bam alignments to train model and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
+Used filtered bam alignments to train model and pseudoreplicated peaks in bed narrowPeak format for overlap peaks  
 - [`preprocessing.sh`](preprocessing.sh)
 
 The working directory for the preprocessing script is different from the rest of the scripts (data from preprocessing was copied into new directory in /data)
@@ -35,7 +35,7 @@ The working directory for the preprocessing script is different from the rest of
 ## 5-fold cross-validation (~48 hours to run; 24 for bias model, 24 for ChromBPNet model)
 Includes training bias model and ChromBPNet model  
 
-Note: make separate directories for each fold and include the associated .json file (folder with splits [here](splits/))
+Note: make separate directories for each fold and include the associated json file (folder with splits [here](splits/))
 
 - [`fold_0.sh`](/folds/fold_0.sh)
 - [`fold_1.sh`](/folds/fold_1.sh)
@@ -106,11 +106,11 @@ wget https://jaspar.genereg.net/download/data/2022/CORE/JASPAR2022_CORE_vertebra
 ```
 
 Profile:
-- To get .h5 file: [`modisco_profile.sh`](/modisco/modisco_profile.sh)
+- To get h5 file: [`modisco_profile.sh`](/modisco/modisco_profile.sh)
 - Report: [`modisco_profile_report.sh`](/modisco/modisco_profile_report.sh)
  
 Counts:
-- To get .h5 file: [`modisco_counts.sh`](/modisco/modisco_counts.sh)
+- To get h5 file: [`modisco_counts.sh`](/modisco/modisco_counts.sh)
 - Report: [`modisco_counts_report.sh`](/modisco/modisco_counts_report.sh)
 
 ## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)
