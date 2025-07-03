@@ -115,6 +115,18 @@ Counts:
 
 ## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)
 - Preprocessing (profile and counts in same file): [`finemo_preprocessing.sh`](/finemo/finemo_preprocessing.sh)
+
+Note: edited main.py on line 131-136 to account for "|=" not being supported in Python 3.8.20:
+
+```
+params.update({
+        "region_width": region_width,
+        "num_regions": num_regions,
+        "untrimmed_motif_width": motif_width,
+        "num_motifs": num_motifs,
+    })
+```
+
 - Hit calling
   - Profile: [`finemo_profile.sh`](/finemo/finemo_profile.sh)
   - Counts: [`finemo_counts.sh`](/finemo/finemo_counts.sh)
