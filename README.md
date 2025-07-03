@@ -116,7 +116,7 @@ Counts:
 ## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)
 - Preprocessing (profile and counts in same file): [`finemo_preprocessing.sh`](/finemo/finemo_preprocessing.sh)
 
-Note: edited main.py on line 131-136 to account for "|=" not being supported in Python 3.8.20:
+Note: For hit calling, edited main.py on line 131-136 to account for "|=" not being supported in Python 3.8.20:
 
 ```
 params.update({
