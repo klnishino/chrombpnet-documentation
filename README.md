@@ -57,7 +57,9 @@ Note: variant scores aren't necessary for running TF-MoDISco (i.e. this step is 
 Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https://github.com/kundajelab/chrombpnet/wiki/FAQ))
 
 ```
-bedtools makewindows -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -w 1000 -s 750 > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed
+bedtools makewindows -g /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/hg38.chrom.sizes -w 1000 -s 750 > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/genome_windows.bed
+
+bedtools intersect -a /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/genome_windows.bed > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/updated_merged_windows.bed
 ```
 
 To get correct data type and NarrowPeak format, manipulate data in R:
