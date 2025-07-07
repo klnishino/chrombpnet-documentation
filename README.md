@@ -61,13 +61,13 @@ If overlap peaks are smaller than 1000 bp, get 1000 bp windows from genome, then
 ```
 bedtools makewindows -g /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/hg38.chrom.sizes -w 1000 -s 750 > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/genome_windows.bed
 
-bedtools intersect -a /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/genome_windows.bed > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/updated_merged_windows.bed
+bedtools intersect -wb -a /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_overlap.bed -b /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/genome_windows.bed > /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/updated_merged_windows.bed
 ```
 
 To get correct data type and NarrowPeak format, manipulate data in R:
 
 ```
-merged_windows <- read.table("/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed")
+merged_windows <- read.table("/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/updated_merged_windows.bed")
 
 merged_windows$V4 <- "."
 merged_windows$V5 <- "."
@@ -80,8 +80,9 @@ merged_windows$V10 <- as.integer((merged_windows$V3 - merged_windows$V2)/2)
 merged_windows$V2 <- as.integer(merged_windows$V2)
 merged_windows$V3 <- as.integer(merged_windows$V3)
 
-write.table(merged_windows, "/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/merged_windows.bed", quote = F, col.names = F, row.names = F, sep="\t")
+write.table(merged_windows, "/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/updated_merged_windows.bed", quote = F, col.names = F, row.names = F, sep="\t")
 ```
+[note: update if 1000 bp windows works]
 
 - [`fold_0_contribs.sh`](/folds_contribs/fold_0_contribs.sh)
 - [`fold_1_contribs.sh`](/folds_contribs/fold_1_contribs.sh)
