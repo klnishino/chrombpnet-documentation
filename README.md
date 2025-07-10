@@ -2,7 +2,7 @@
 ## General workflow
 1. [Preprocessing](#preprocessing)
 2. [Train bias model and ChromBPNet model](#5-fold-cross-validation-48-hours-to-run-24-for-bias-model-24-for-chrombpnet-model)
-3. [Get contribution scores and merge across folds](#get-contribution-scores-28-hours-to-run)
+3. [Get contribution scores and merge across folds](#get-contribution-scores)
 4. [TF-MoDISco](#run-tf-modisco-lite)
 5. [Fi-NeMo](#run-fi-nemo)
 
@@ -53,7 +53,7 @@ Run commands in this script after navigating into variant-scorer repository (ex.
  
 Note: variant scores aren't necessary for running TF-MoDISco (i.e. this step is independent from the following scripts)
 
-## Get contribution scores (~28 hours to run)
+## Get contribution scores
 Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https://github.com/kundajelab/chrombpnet/wiki/FAQ))
 
 If overlap peaks are smaller than 1000 bp, get 1000 bp windows from genome, then use bedtools to get intersect with overlap peaks.
