@@ -118,7 +118,8 @@ Profile:
 - To get h5 file: [`modisco_profile.sh`](/modisco/modisco_profile.sh)
 - Report: [`modisco_profile_report.sh`](/modisco/modisco_profile_report.sh)
 
-## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)
+## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)  
+Note: ChromBPNet and FiNeMo require different version of NumPy (FiNeMo requires numpy==1.24.4, but ChromBPnet requires earlier version)  
 - Preprocessing (profile and counts in same file): [`finemo_preprocessing.sh`](/finemo/finemo_preprocessing.sh)
 
 Note: For hit calling, edited main.py on line 131-136 to account for "|=" not being supported in Python 3.8.20:
