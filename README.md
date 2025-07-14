@@ -134,5 +134,4 @@ params.update({
 
 - Hit calling
   - Profile: [`finemo_profile.sh`](/finemo/finemo_profile.sh)
-  - Counts: [`finemo_counts.sh`](/finemo/finemo_counts.sh)
 
