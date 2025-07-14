@@ -105,6 +105,7 @@ Counts: [`mean_counts_h5.py`](contribution_scores/mean_counts_h5.py)
 
 ## Run [TF-MoDISco-lite](https://github.com/jmschrei/tfmodisco-lite)
 Running with 1,000,000 seqlets and 500 bp window
+Use profile head from contribution scores
 
 Before running report script, get motifs of interest. Example:
 ```
@@ -116,10 +117,6 @@ Note: TF-MoDISco supports multithreading that can be specifie with NUMBA_NUM_THR
 Profile:
 - To get h5 file: [`modisco_profile.sh`](/modisco/modisco_profile.sh)
 - Report: [`modisco_profile_report.sh`](/modisco/modisco_profile_report.sh)
- 
-Counts:
-- To get h5 file: [`modisco_counts.sh`](/modisco/modisco_counts.sh)
-- Report: [`modisco_counts_report.sh`](/modisco/modisco_counts_report.sh)
 
 ## Run [Fi-NeMo](https://github.com/austintwang/finemo_gpu)
 - Preprocessing (profile and counts in same file): [`finemo_preprocessing.sh`](/finemo/finemo_preprocessing.sh)
