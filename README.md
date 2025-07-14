@@ -53,7 +53,9 @@ Run commands in this script after navigating into variant-scorer repository (ex.
  
 Note: variant scores aren't necessary for running TF-MoDISco (i.e. this step is independent from the following scripts)
 
-## Get contribution scores
+## Get contribution scores  
+(21 hours for just profile head)  
+  
 Turn bed file into NarrowPeak format (done according to [ChromBPNet FAQ](https://github.com/kundajelab/chrombpnet/wiki/FAQ))
 
 If overlap peaks are smaller than 1000 bp, get 1000 bp windows from genome, then use bedtools to get intersect with overlap peaks.
