@@ -84,7 +84,6 @@ merged_windows$V3 <- as.integer(merged_windows$V3)
 
 write.table(merged_windows, "/scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/downloads/updated_merged_windows.bed", quote = F, col.names = F, row.names = F, sep="\t")
 ```
-[note: update if 1000 bp windows works]
 
 - [`fold_0_contribs.sh`](/folds_contribs/fold_0_contribs.sh)
 - [`fold_1_contribs.sh`](/folds_contribs/fold_1_contribs.sh)
@@ -111,6 +110,8 @@ Before running report script, get motifs of interest. Example:
 ```
 wget https://jaspar.genereg.net/download/data/2022/CORE/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt -O /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt
 ```
+
+Note: TF-MoDISco supports multithreading that can be specifie with NUMBA_NUM_THREADS.
 
 Profile:
 - To get h5 file: [`modisco_profile.sh`](/modisco/modisco_profile.sh)
