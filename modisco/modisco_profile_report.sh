@@ -18,7 +18,7 @@
 
 conda activate chrombpnet
 
-modisco report -i  /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_profile_folds/modisco_w_500/modisco_results.h5 \
+modisco report -i /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/updated_contribs/profile_only/modisco-mt/modisco_results.h5 \
 	-o report/ \
-	-s /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_profile_folds/modisco_w_500/report/ \
-	-m /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/data/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt
+	-s /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/updated_contribs/profile_only/modisco-mt/report/ \
+	-m /scratch/tovar_root/tovar0/knishino/chrombpnet-encode-sm/merged_profile_folds/modisco_test/data/JASPAR2022_CORE_vertebrates_non-redundant_pfms_meme.txt
